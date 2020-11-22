@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	secret := []byte("solution.itlab@gmail.comHENNGECHALLENGE003")
+	secret := []byte("YOUR SECRET")
 	code, err := totp.GenerateCodeCustom(base32.StdEncoding.EncodeToString(secret), time.Now(), totp.ValidateOpts{
 		Algorithm: otp.AlgorithmSHA512,
 		Digits:    10,
